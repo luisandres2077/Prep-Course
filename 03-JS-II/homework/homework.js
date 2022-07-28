@@ -174,7 +174,10 @@ function fizzBuzz(numero) {
   }
   else{
     return numero;
+
   }
+  
+  
 }
 
 function operadoresLogicos(num1, num2, num3) {
