@@ -146,7 +146,14 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+var cont=0;
 
+  for(i=0; i<arreglo.length; i++){
+    if(arreglo[i]>18){
+      cont++;
+    }
+ }
+return cont;
 }
 
 
@@ -154,7 +161,13 @@ function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
-  //Escribe tu código aquí   
+  //Escribe tu código aquí  
+  
+  if(numeroDeDia===1 || numeroDeDia===7) 
+  {
+    return "Es fin de semana";
+  }
+  return "Es dia laboral";
   
 } 
 
